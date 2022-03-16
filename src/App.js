@@ -4,29 +4,33 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <StudentCard></StudentCard>
-      <StudentCard></StudentCard>
+      <StudentCard name="RH Rasel" Roll='55'></StudentCard>
+      <StudentCard name="RJ Hossin" Roll='45'></StudentCard>
+      <StudentCard name="Lockman" Roll='31'></StudentCard>
+
       <br />
-      <TeacherCard></TeacherCard>
-      <TeacherCard></TeacherCard>
+      <TeacherCard name='Dr. SUltan' phone='0179862452'></TeacherCard>
+      <TeacherCard name='Dr. Sabrin' phone='017986528'></TeacherCard>
+      <TeacherCard name='Dr. Minhaz' phone='0179875667'></TeacherCard>
     </div>
   );
 }
-function StudentCard() {
+function StudentCard(props) {
+  console.log(props)
   return (
     <div className='student'>
       <p>Student</p>
-      <h1>Name: Sakibal Hassan</h1>
-      <h3>Roll:222</h3>
+      <h1>Name: {props.name}</h1>
+      <h3>Roll:{props.Roll}</h3>
     </div>
   );
 }
-function TeacherCard() {
+function TeacherCard(props) {
   return (
     <div className='teacher'>
       <p>Teacher</p>
-      <h1>Name: Azad Rohoman</h1>
-      <h3>ID:400</h3>
+      <h1>Name: {props.name}</h1>
+      <h3>Phone:{props.phone}</h3>
     </div>
   );
 }
