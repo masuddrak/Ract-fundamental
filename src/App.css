@@ -40,3 +40,21 @@
   background-color: green;
   padding: 10px;
 }
+.student{
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+}
+.teacher{
+  display: inline-block;
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+}
